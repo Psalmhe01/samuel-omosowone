@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import heroImg from "@/assets/IMG_9178.jpg"
 import { EncryptedText } from "@/components/aceternity/encrypted-text"
+import { useNavigate } from "react-router-dom"
 
 function Hero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -14,6 +15,7 @@ function Hero() {
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.3])
 
+  const navigate = useNavigate();
   return (
     <div
       ref={containerRef}
@@ -59,6 +61,7 @@ function Hero() {
         <Button
           size="lg"
           className="w-fit rounded-full px-8 font-semibold text-black"
+          onClick={() => navigate('/Projects')}
         >
           VIEW PORTFOLIO
         </Button>
