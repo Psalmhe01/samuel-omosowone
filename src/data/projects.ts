@@ -3,6 +3,7 @@ import ace from "@/assets/ace-thumb.png";
 import psalmhe from "@/assets/psalmhe-thumb.png";
 import fitbae from "@/assets/fitbae-thumb.png";
 import topichub from "@/assets/topichub-thumb.png"
+import vetes from "@/assets/vetes-thumb.png"
 
 export const projects: Project[] = [
   {
@@ -27,7 +28,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Mantine", "SQL", ".NET"],
     githubUrl: "https://github.com/ZacharyNW/CMPS-2850-S26-G1",
     liveUrl: "https://vetes-iota.vercel.app",
-    image: "/assets/vetes-thumb.png",
+    image: vetes,
   },
 
   {

@@ -36,6 +36,7 @@ export default function ProjectPreview() {
           size="lg"
           className="w-fit rounded-full px-8 font-semibold text-white/60 border-3 border-white/60 justify-center"
           variant="outline"
+          onClick={() => window.open("/projects", "_self")}
         >
           VIEW ALL
         </Button>
