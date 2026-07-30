@@ -45,7 +45,7 @@ export default function About() {
               projects that make a positive impact.
             </p>
             <p className="my-4 text-lg text-gray-300 lg:pr-8">
-              Beyond technical skills, I value writing clean, maintainablecode,
+              Beyond technical skills, I value writing clean, maintainable code,
               collaborating effectively with others, and continuously improving
               my craft. Every project I work on is an opportunity to learn,
               experiment, and create something meaningful. I'm excited to bring

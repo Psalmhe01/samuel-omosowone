@@ -33,7 +33,7 @@ export default function ProjectDetail({ slug }: { slug: string }) {
   }
 
   return (
-    <div className="relative z-10 mx-auto mt-24 flex w-full max-w-7xl flex-col justify-center overflow-hidden bg-black p-6 md:px-12">
+    <div className="relative z-10 mx-auto mt-24 flex w-full max-w-[90%] flex-col justify-center overflow-hidden p-6 md:px-12">
       {projects
         .filter((p) => p.title === slug)
         .map((p, i) => (

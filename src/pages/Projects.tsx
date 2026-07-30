@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom"
 export default function Projects() {
   const navigate = useNavigate()
   return (
-    <div className="relative z-10 mx-auto mt-24 flex w-full max-w-7xl flex-col justify-center overflow-hidden bg-black p-6 md:px-12">
+    <div className="relative z-10 mx-auto mt-24 flex w-full max-w-[90%] flex-col justify-center overflow-hidden p-6 md:px-12">
       <h1 className="mb-8 text-3xl font-bold text-white md:text-6xl">
         Take a look at my projects
       </h1>

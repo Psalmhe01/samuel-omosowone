@@ -39,7 +39,7 @@ export const projects: Project[] = [
     date: "March 2026",
     description: "An AI-powered personalized study planner",
     fullDescription:
-      "An AI-powered study planner built in 36 hours at a hackathon with a team of three. Built with React and Mantine on the frontend, powered by Google Gemini for the AI generation logic. Users fill out a short survey about their study habits and preferences, then upload a course syllabus. Ace parses the syllabus to isolate deadlines and key dates, then generates a personalized daily study plan that adapts around those dates — turning a static PDF syllabus into an actionable day-by-day schedule.",
+      "An AI-powered study planner built in 12 hours at a hackathon with a team of three. Built with React and Mantine on the frontend, powered by Google Gemini for the AI generation logic. Users fill out a short survey about their study habits and preferences, then upload a course syllabus. Ace parses the syllabus to isolate deadlines and key dates, then generates a personalized daily study plan that adapts around those dates — turning a static PDF syllabus into an actionable day-by-day schedule.",
     tech: ["React", "JavaScript", "Mantine", "Google Gemini"],
     githubUrl: "https://github.com/tonisobowale01/lionhacks-theunderdogs",
     liveUrl: "https://lionhacks-theunderdogs.vercel.app",
