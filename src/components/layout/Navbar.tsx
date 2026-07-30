@@ -4,8 +4,16 @@ function Navbar() {
   
   return (
     <nav className="fixed top-0 right-0 left-0 z-50 flex items-center justify-between bg-black/60 px-6 py-6 backdrop-blur-md md:px-12 border-b-1 border-gray">
-      <Link to="/" className="text-lg font-medium text-white">
-        Samuel O.
+      <Link
+        to="/"
+        aria-label="Samuel O. — Home"
+        className="relative block h-10 w-24 overflow-hidden"
+      >
+        <img
+          src="/logo.svg"
+          alt="Samuel O."
+          className="absolute top-1/2 left-0 h-12 w-12 -translate-y-1/2 object-contain"
+        />
       </Link>
 
       <div className="flex items-center gap-6 text-white">
