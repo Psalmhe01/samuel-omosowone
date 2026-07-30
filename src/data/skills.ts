@@ -2,7 +2,6 @@ import type { Skill } from "@/types"
 import {
   IconBrandCSharp,
   IconBrandFirebase,
-  IconBrandGit,
   IconBrandGithub,
   IconBrandJavascript,
   IconBrandMantine,

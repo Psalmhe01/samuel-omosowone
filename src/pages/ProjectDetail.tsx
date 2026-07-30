@@ -17,7 +17,6 @@ import {
 } from "@tabler/icons-react"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
 
 export default function ProjectDetail({ slug }: { slug: string }) {
   const navigate = useNavigate()
