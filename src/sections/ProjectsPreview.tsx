@@ -1,4 +1,3 @@
-import React from "react"
 import { useNavigate } from "react-router-dom"
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid"
 import { Button } from "@/components/ui/button"
