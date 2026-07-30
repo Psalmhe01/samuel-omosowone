@@ -1,7 +1,12 @@
 import aboutIMG from "@/assets/aboutIMG.jpg"
 import { Button } from "@/components/ui/button"
+import { useNavigate } from "react-router-dom"
 
 export default function AboutPreview() {
+
+  const navigate = useNavigate()
+
+
   return (
     <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col justify-center p-6 md:px-12">
       <div
@@ -23,6 +28,7 @@ export default function AboutPreview() {
           size="lg"
           className="w-fit rounded-full px-8 font-semibold text-white/60 border-3 border-white/60 justify-center"
           variant="outline"
+          onClick={() => navigate("/about")}
         >
           READ MORE
         </Button>

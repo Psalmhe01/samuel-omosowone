@@ -1,9 +1,12 @@
+import React from "react"
+import { useNavigate } from "react-router-dom"
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid"
 import { Button } from "@/components/ui/button"
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover"
 import { projects } from "@/data/projects"
 
 export default function ProjectPreview() {
+  const navigate = useNavigate()
   return (
     <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col justify-center p-6 md:px-12">
       <p className="mb-2 font-[Helvetica] text-sm text-muted-foreground md:text-sm">
@@ -17,24 +20,31 @@ export default function ProjectPreview() {
           {projects
             .filter((p) => p.featured)
             .map((p, i) => (
-              <BentoGridItem
+              <button
                 key={i}
-                content={
-                  <DirectionAwareHover imageUrl={p.image}>
-                    <p className="text mb-2 text-xl md:text-xl font-[Helvetica] ">
-                      {p.title}
-                    </p>
-                    <p className="text-sm font-normal">{p.description}</p>
-                  </DirectionAwareHover>
-                }
-              />
+                onClick={() => navigate(`/projects/${p.title}`)}
+              >
+                <BentoGridItem
+                  key={i}
+                  content={
+                    <DirectionAwareHover imageUrl={p.image}>
+                      <div className="flex flex-col items-start justify-start">
+                        <p className="text mb-2 font-[Helvetica] text-xl md:text-xl">
+                          {p.title}
+                        </p>
+                        <p className="text-sm font-normal">{p.description}</p>
+                      </div>
+                    </DirectionAwareHover>
+                  }
+                />
+              </button>
             ))}
         </BentoGrid>
       </div>
       <div>
         <Button
           size="lg"
-          className="w-fit rounded-full px-8 font-semibold text-white/60 border-3 border-white/60 justify-center"
+          className="w-fit justify-center rounded-full border-3 border-white/60 px-8 font-semibold text-white/60"
           variant="outline"
           onClick={() => window.open("/projects", "_self")}
         >

@@ -1,0 +1,120 @@
+import type { Skill } from "@/types"
+import {
+  IconBrandCSharp,
+  IconBrandFirebase,
+  IconBrandGit,
+  IconBrandGithub,
+  IconBrandJavascript,
+  IconBrandMantine,
+  IconBrandPython,
+  IconBrandReact,
+  IconBrandTypescript,
+  IconBrandVercel,
+  IconBrandVite,
+  IconCloudCode,
+  IconCloudUpload,
+  IconCode,
+  IconDatabase,
+  IconGitFork,
+  IconServer,
+} from "@tabler/icons-react"
+
+export const skills: Skill[] = [
+  {
+    name: "JavaScript",
+    category: "language",
+    icon: IconBrandJavascript,
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "C#",
+    category: "language",
+    icon: IconBrandCSharp,
+    link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+  },
+  {
+    name: ".NET",
+    category: "framework",
+    icon: IconCode,
+    link: "https://dotnet.microsoft.com/",
+  },
+  {
+    name: "React",
+    category: "framework",
+    icon: IconBrandReact,
+    link: "https://react.dev/",
+  },
+  {
+    name: "TypeScript",
+    category: "language",
+    icon: IconBrandTypescript,
+    link: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "Python",
+    category: "language",
+    icon: IconBrandPython,
+    link: "https://www.python.org/",
+  },
+  {
+    name: "SQLite",
+    category: "tool",
+    icon: IconDatabase,
+    link: "https://www.sqlite.org/",
+  },
+  
+  {
+    name: "Vercel",
+    category: "tool",
+    icon: IconBrandVercel,
+    link: "https://vercel.com/",
+  },
+  {
+    name: "Render",
+    category: "tool",
+    icon: IconServer,
+    link: "https://render.com/",
+  },
+  {
+    name: "Firebase",
+    category: "tool",
+    icon: IconBrandFirebase,
+    link: "https://firebase.google.com/",
+  },
+  {
+    name: "Cloudinary",
+    category: "tool",
+    icon: IconCloudUpload,
+    link: "https://cloudinary.com/",
+  },
+  {
+    name: "Fork",
+    category: "tool",
+    icon: IconGitFork,
+    link: "https://git-fork.com/",
+  },
+  {
+    name: "GitHub",
+    category: "tool",
+    icon: IconBrandGithub,
+    link: "https://github.com/",
+  },
+  {
+    name: "Vite",
+    category: "tool",
+    icon: IconBrandVite,
+    link: "https://vite.dev/",
+  },
+  {
+    name: "Mantine",
+    category: "framework",
+    icon: IconBrandMantine,
+    link: "https://mantine.dev/",
+  },
+  {
+    name: "PythonAnywhere",
+    category: "tool",
+    icon: IconCloudCode,
+    link: "https://www.pythonanywhere.com/",
+  },
+]

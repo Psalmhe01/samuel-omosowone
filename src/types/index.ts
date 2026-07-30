@@ -1,6 +1,9 @@
+import type { ComponentType } from "react"
+
 export interface Project {
   slug: string
   title: string
+  date: string
   description: string
   fullDescription?: string
   tech: string[]
@@ -14,7 +17,8 @@ export interface Project {
 export interface Skill {
   name: string
   category: "language" | "framework" | "tool" | "other"
-  icon?: string
+  icon?: ComponentType<{ className?: string }>
+  link?: string
   proficiency?: "beginner" | "intermediate" | "advanced"
 }
 
